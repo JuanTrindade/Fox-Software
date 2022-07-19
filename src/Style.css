@@ -26,10 +26,10 @@
   color: #f2f2f2;
 }
 .textUserAndPass {
-  text-decoration: none;
   text-align: center;
   color: #f2f2f2;
-}
+  text-align: center;
+} 
 .containerButton {
   margin: 2%;
   justify-content: center;
@@ -79,4 +79,31 @@
 }
 .centering{
   text-align: center;
+}
+.nav{
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: rebeccapurple;
+  position: absolute;
+  height: 60px;
+}
+.buttonNav{
+  background-color: #f2f2f2;
+  color: rebeccapurple;
+  border: none;
+  border-radius: 2px;
+  height: 40px;
+  width: 100px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 14px;
+}
+.listStyle{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  list-style: none;
+  height: 100%;
+  align-items: center;
 }
