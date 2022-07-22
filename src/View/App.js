@@ -1,8 +1,8 @@
 import './Style.css';
+import ReactDOM from 'react-dom/client';
 import React from 'react';
-import logo from './fox.png';
-import {BrowserRouter as Router, Link, Route} from 'react-router-dom'
-
+import logo from '../Images/fox.png';
+import {BrowserRouter, Routes, Route} from 'react-router-dom';
 
 function App() {
   async function realocate(){
@@ -61,7 +61,7 @@ function App() {
         </div>
       </form>
 
-      <footer style={{ position: 'fixed', height: '60px', bottom: '0', left: '0', right: '0', backgroundColor: 'rebeccapurple'}}>
+      <footer className='footer'>
         <h1 style={{ height: '100%', alignItems: 'center', display: 'flex', justifyContent: 'center', color: '#F2F2F2', fontSize: '22px', fontWeight: 'bold'}}>FoxSoftware ©</h1>
       </footer>
     </div>
