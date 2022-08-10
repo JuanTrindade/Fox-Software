@@ -1,9 +1,19 @@
-.pcontainer {
+.loginPageContainer {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100%;
 }
+
+.homeContainer{
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
 .Container {
   background-color: rebeccapurple;
   border-radius: 8px;
@@ -14,27 +24,37 @@
   height: 100%;
   box-shadow: #000;
 }
+
 .Header {
   text-align: center;
   padding-top: 15%;
   color: #f2f2f2;
+  text-decoration: none;
 }
+
 .textContent {
   padding-top: 2%;
   padding-bottom: 4%;
   text-align: center;
   color: #f2f2f2;
 }
+
 .textUserAndPass {
   text-align: center;
   color: #f2f2f2;
   text-align: center;
 } 
+
+a:link{
+  text-decoration: none;
+}
+
 .containerButton {
   margin: 2%;
   justify-content: center;
   display: flex;
 }
+
 .buttonTest {
   background-color: slateblue;
   border: 0;
@@ -47,13 +67,21 @@
   height: 45px;
   font-weight: bold;
   color: #f2f2f2;
+  font-size: 14px;
+  text-decoration: none;
 }
+.buttonTest:hover{
+  background-color: #F2F2F2;
+  color: rebeccapurple;
+}
+
 .containerInput {
   padding: 8%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 .Input {
   color: #f2f2f2;
   background-color: transparent;
@@ -66,9 +94,11 @@
   border-bottom-width: 1px;
   text-decoration: none;
 }
+
 .separation {
   margin-top: 4%;
 }
+
 .logoContainer{
   margin-top: 15%;
   margin-left: 10%;
@@ -77,9 +107,11 @@
   align-items: center;
   display: flex;
 }
+
 .centering{
   text-align: center;
 }
+
 .nav{
   top: 0;
   left: 0;
@@ -88,6 +120,7 @@
   position: fixed;
   height: 60px;
 }
+
 .buttonNav{
   background-color: #f2f2f2;
   color: rebeccapurple;
@@ -99,6 +132,7 @@
   cursor: pointer;
   font-size: 14px;
 }
+
 .listStyle{
   display: flex;
   flex-direction: row;
@@ -107,6 +141,7 @@
   height: 100%;
   align-items: center;
 }
+
 .footer{
   position: absolute; 
   height: 60px; 
@@ -115,3 +150,25 @@
   right: 0; 
   background-color: rebeccapurple
 }
+
+.footerText{
+  height: 100%;
+  align-items: center; 
+  display: flex;
+  justify-content: center; 
+  color: #F2F2F2; 
+  font-size: 22px;
+  font-weight: bold;
+}
+.contentBox{
+  height: 500px;
+  width: 500px;
+  background-color: red;
+  color: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+

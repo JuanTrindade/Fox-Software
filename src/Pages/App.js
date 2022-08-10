@@ -1,26 +1,19 @@
 import './Style.css';
-import ReactDOM from 'react-dom/client';
 import React from 'react';
 import logo from '../Images/fox.png';
-import {BrowserRouter, Routes, Route} from 'react-router-dom';
+import {Link} from 'react-router-dom'
+
+import Nav from '../Components/Navbar';
+import Footer from '../Components/Footer';
 
 function App() {
   async function realocate(){
-    window.open('https://youtube.com.br', 'blank_', 'noopener,noreferrer');
+    window.open('https://youtube.com.br', 'blank', 'noopener,noreferrer');
   }
 
   return (
-    <div className='pcontainer'>
-      <nav className='nav'>
-        <ul className='listStyle'>
-          <li>
-            <a className='textUserAndPass'>Fox Software ©</a>
-          </li>
-          <li>
-            <button className='buttonNav'>Cadastre-se</button>
-          </li>
-        </ul>
-      </nav>
+    <div className='loginPageContainer'>
+      <Nav />
 
       <form className="Container">
         <div className='logoContainer'>
@@ -51,19 +44,14 @@ function App() {
           />
         </div>
         <div className='containerButton'>
-          <button 
-            className='buttonTest'
-            onPress={() => realocate()}
-          >Acessar</button>
+          <Link to='/home' className='buttonTest'>Acessar</Link>
         </div>
         <div className='centering'>
           <a  href="https://br.linkedin.com/" target="blank" rel='noopener noreferrer' className='textUserAndPass'>Esqueci minha senha</a>
         </div>
       </form>
 
-      <footer className='footer'>
-        <h1 style={{ height: '100%', alignItems: 'center', display: 'flex', justifyContent: 'center', color: '#F2F2F2', fontSize: '22px', fontWeight: 'bold'}}>FoxSoftware ©</h1>
-      </footer>
+      <Footer />
     </div>
   );
 }
